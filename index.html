@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connected Gallery Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#flow">Gallery Trio</a>
+      <nav class="site-nav" aria-label="Gallery projects">
+        <a href="#flow">Flow</a>
+        <a href="#tilted">Tilted</a>
+        <a href="#circular">Circular</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero__media" aria-hidden="true">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Mountains%20in%20Skaftafell%20National%20Park%2C%20Hornafj%C3%B6r%C3%B0ur%20municipality%2C%20Iceland%2C%2020240719%201756%202806.jpg?width=1600"
+            alt=""
+          />
+        </div>
+        <div class="hero__content">
+          <p class="eyebrow">HTML CSS JS</p>
+          <h1>Connected Gallery Project</h1>
+          <p>
+            Three interactive image projects merged into one polished page with
+            shared navigation and separate gallery controls.
+          </p>
+          <div class="hero__actions" aria-label="Open a gallery">
+            <a href="#flow">Flow Gallery</a>
+            <a href="#tilted">Tilted Carousel</a>
+            <a href="#circular">Circular Gallery</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="project project--flow" id="flow">
+        <div class="project__intro">
+          <p class="eyebrow">Project 01</p>
+          <h2>Flow Gallery</h2>
+        </div>
+
+        <div
+          class="flow-stage"
+          aria-roledescription="carousel"
+          aria-label="Mountain image gallery"
+          data-gallery="flow"
+        >
+          <button
+            class="icon-button flow-prev"
+            type="button"
+            aria-label="Previous image"
+          >
+            <span aria-hidden="true">&#8249;</span>
+          </button>
+          <div class="flow-track" data-flow-track></div>
+          <button
+            class="icon-button flow-next"
+            type="button"
+            aria-label="Next image"
+          >
+            <span aria-hidden="true">&#8250;</span>
+          </button>
+        </div>
+
+        <div
+          class="flow-thumbs"
+          data-flow-thumbs
+          aria-label="Jump to image"
+        ></div>
+      </section>
+
+      <section class="project project--tilted" id="tilted">
+        <div class="project__intro">
+          <p class="eyebrow">Project 02</p>
+          <h2>Tilted Carousel</h2>
+        </div>
+
+        <div
+          class="tilted-carousel"
+          aria-roledescription="carousel"
+          aria-label="Lebanon travel carousel"
+          data-gallery="tilted"
+        >
+          <div class="tilted-row" data-tilted-row></div>
+          <p class="tilted-caption" data-tilted-caption></p>
+          <div class="tilted-controls">
+            <button
+              class="icon-button tilted-prev"
+              type="button"
+              aria-label="Previous place"
+            >
+              <span aria-hidden="true">&#8249;</span>
+            </button>
+            <div class="tilted-dots" data-tilted-dots></div>
+            <button
+              class="icon-button tilted-next"
+              type="button"
+              aria-label="Next place"
+            >
+              <span aria-hidden="true">&#8250;</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="project project--circular" id="circular">
+        <div class="project__intro">
+          <p class="eyebrow">Project 03</p>
+          <h2>Circular Gallery</h2>
+        </div>
+
+        <div
+          class="wheel-wrap"
+          aria-roledescription="carousel"
+          aria-label="Lebanon landmarks wheel"
+          data-gallery="circular"
+        >
+          <div class="wheel">
+            <div class="ring" data-ring></div>
+            <div class="lens">
+              <img class="lens__img" data-lens-a alt="" />
+              <img class="lens__img" data-lens-b alt="" />
+            </div>
+            <div class="wheel-tag" data-wheel-tag></div>
+          </div>
+
+          <div class="wheel-controls">
+            <button
+              class="icon-button wheel-prev"
+              type="button"
+              aria-label="Rotate to previous"
+            >
+              <span aria-hidden="true">&#8249;</span>
+            </button>
+            <button
+              class="icon-button wheel-next"
+              type="button"
+              aria-label="Rotate to next"
+            >
+              <span aria-hidden="true">&#8250;</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Original gallery concepts & Design By
+        <a
+          href="https://www.github.com/ibrahimf90"
+          target="_blank"
+          rel="noopener"
+          >Ibrahim Fayyad</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
