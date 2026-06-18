@@ -1,7 +1,7 @@
 ## Connected Gallery Project
 A modern, interactive gallery showcase built with HTML, CSS, and Vanilla JavaScript, featuring three unique gallery experiences combined into a single responsive web page.
 
-##🚀 Features
+## 🚀 Features
 1. Flow Gallery
 An immersive carousel with:
 Infinite circular navigation
@@ -30,7 +30,7 @@ Keyboard accessibility
 Touch gesture support
 Smooth image transitions
 
-##📸 Gallery Content
+## 📸 Gallery Content
 Flow Gallery
 Showcases beautiful landscapes from:
 Iceland
@@ -65,7 +65,7 @@ CSS Transforms & Animations
 Touch Events API
 Accessibility Best Practices
 
-##✨ Highlights
+## ✨ Highlights
 Fully responsive
 Touch-friendly interactions
 Lightweight and dependency-free
@@ -75,7 +75,7 @@ Smooth animations
 Modern UI design
 Clean modular JavaScript architecture
 
-##👨‍💻 Author
+## 👨‍💻 Author
 Ibrahim Fayyad
 GitHub: www.github.com/ibrahimf90
 techniques, and responsive front-end development.
