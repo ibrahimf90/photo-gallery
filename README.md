@@ -77,5 +77,5 @@ Clean modular JavaScript architecture
 
 ## 👨‍💻 Author
 Ibrahim Fayyad
+---
 GitHub: www.github.com/ibrahimf90
-techniques, and responsive front-end development.
